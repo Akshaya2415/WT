@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .quiz-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .question {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .options {
+            text-align: left;
+            margin-top: 10px;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>SQL Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                1. Which SQL statement is used to retrieve data from a database?
+            </div>
+            <div class="options">
+                <label><input type="radio" name="q1" value="A"> A) INSERT</label><br>
+                <label><input type="radio" name="q1" value="B"> B) UPDATE</label><br>
+                <label><input type="radio" name="q1" value="C"> C) SELECT</label><br>
+                <label><input type="radio" name="q1" value="D"> D) DELETE</label>
+            </div>
+
+            <div class="question" style="margin-top: 20px;">
+                2. Which SQL clause is used to filter records?
+            </div>
+            <div class="options">
+                <label><input type="radio" name="q2" value="A"> A) WHERE</label><br>
+                <label><input type="radio" name="q2" value="B"> B) GROUP BY</label><br>
+                <label><input type="radio" name="q2" value="C"> C) ORDER BY</label><br>
+                <label><input type="radio" name="q2" value="D"> D) HAVING</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

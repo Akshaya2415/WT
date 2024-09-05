@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="600px" height="300px" style="border: 2px solid rgb(194, 8, 8); margin: 200px;"></canvas>
+    <script>
+        var canvas=document.getElementById("mycanvas");
+        var c=canvas.getContext("2d");
+        c.moveTo(0,0);
+        c.lineTo(600,300);
+        c.stroke();
+        c.beginPath();
+        c.arc(200,150,100,250,300);
+        c.stroke();
+        c.font="50px Arial";
+        c.fillText("WELCOME",300,150);
+        c.font="70px TimesNewRoman";
+        c.strokeText("TO CANVAS",150,200);
+    </script>
+</body>
+</html>
